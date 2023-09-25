@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Import local css files -->
+  <link href="../../index.css" rel="stylesheet" type="text/css">
+  <link href="../themes/dark.css" rel="stylesheet" type="text/css">
+  <link href="../ContactUs/contactUs.css" rel="stylesheet" type="text/css">
+  <link href="./services.css" rel="stylesheet" type="text/css">
+  <!-- import font packages -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Add title and favicon -->
+  <title>InstaWash</title>
+  <link rel="icon" href="./assets/images/outline_local_laundry_service_white_24dp.png" type="image/x-icon">
+</head>
+
+<body>
+  <header class="d-flex justify-between nav-header">
+    <div class="header-title d-flex"><a class="logo font-oswald" href="../../index.html">InstaWash</a></div>
+    <nav class="navbar">
+      <ul class="d-flex justify-around flex-direction-row">
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../About/about.html">About</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../ContactUs/contactUs.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../authentication/authentication.html">Login/Register</a>
+        </li>
+        <form class="form-inline search-control my-2 my-lg-0 d-flex align-items-center">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </ul>
+    </nav>
+  </header>
+
+   <!-- side menu navigation for responsiveness -->
+   <header class="d-flex justify-between menu-header" style="display: none;">
+    <div class="header-title d-flex justify-between"><img class="logo font-oswald cursor-pointer" src="../../assets/images/hmaburger-menu.png" height="45px" width="45px" onclick="showSideNav()"> 
+      <div class="header-title d-flex"><a class="logo font-oswald" href="../../index.html">InstaWash</a></div></div>
+    <div class="side-bar-navigation fade" id="side-bar-navigation">
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../About/about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="../ContactUs/contactUs.html">Contact Us</a></li>
+        <li><a href="../authentication/authentication.html">Login / Register</a></li>
+      </ul>
+    </div>
+    <script>
+      function showSideNav() {
+        let displayValue = document.getElementById('side-bar-navigation').style.display;
+        
+        if(displayValue == 'none' || displayValue == '')
+         { document.getElementById('side-bar-navigation').style.display = 'flex'; } else {
+            document.getElementById('side-bar-navigation').style.display = 'none'; }
+      }
+    </script>
+  </header>
+
+  <div class="container">
+    <div class="font-oswald heading"> Services </div>
+  </div>
+<div class="flex-container">
+  <div class="inner-flex-container" style="background-color:#3e3e3e;max-width:30%;"> 
+    <div class="responsive"><img src="../../assets/images/laundry.png"  style='height: 100%; width: 100%; object-fit: contain'/></div>
+    <div class="services-heading"><p class="font-oswald" style="font-size: 1.5rem;">Get your clothes washed and delivered in no time.</p></div>
+    <div class="services-text"><p >No more wait times. No more hassle. Do your laundry at ease with Instawash.</br>
+      Your one-stop solution for getting your clothes washed, dried , ironed and delivered at your doorstep.</p></div>
+  </div>
+  <div class="inner-flex-container" style="background-color:#3e3e3e;max-width:30%;"> 
+    <div class="responsive"><img src="../../assets/images/laundry-women.png"  style='height: 100%; width: 100%; object-fit: contain'/></div>
+    <div class="services-heading"><p class="font-oswald" style="font-size: 1.5rem;">We Wash, Dry and Iron your clothes</p></div>
+    <div class="services-text"><p >Care and quality are the core values of InstaWash dry cleaning and laundry
+      service.</br>
+      Our mission is to provide consistent, quality clothing care with a level of service that exceeds your
+      expectations</p></div>
+  </div>
+  <div class="inner-flex-container" style="background-color:#3e3e3e;max-width:30%;"> 
+    <div class="responsive"><img src="../../assets/images/pickup-delivery.png"  style='height: 100%; width: 100%; object-fit: contain'/></div>
+    <div class="services-heading"><p class="font-oswald" style="font-size: 1.5rem;">We do Pickup / Delivery</p></div>
+    <div class="services-text"><p >Explore our Services</p></div>
+  </div>
+  </body>
+  </html>

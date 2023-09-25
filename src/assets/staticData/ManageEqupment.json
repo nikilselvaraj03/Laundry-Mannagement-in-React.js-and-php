@@ -1,0 +1,88 @@
+{
+    "ManageEquipment": [
+        {
+            "No":"5001",
+            "EquipmentName":"Washine Machine",
+            "Status":"In Use",
+            "OrderNo":"1003",
+            "CustomerName":"Angela"
+        },
+        {
+            "No":"5002",
+            "EquipmentName":"Dryer",
+            "Status":"In Use",
+            "OrderNo":"1007",
+            "CustomerName":"Fedric"
+        },
+        {
+            "No":"5003",
+            "EquipmentName":"Washing Machine",
+            "Status":"Available",
+            "OrderNo":"",
+            "CustomerName":""
+        },
+        {
+            "No":"5004",
+            "EquipmentName":"Washing Machine",
+            "Status":"Repair",
+            "OrderNo":"",
+            "CustomerName":""
+        },
+        {
+            "No":"5005",
+            "EquipmentName":"Iron",
+            "Status":"In-Use",
+            "OrderNo":"1005",
+            "CustomerName":"Aravind"
+        },
+        {
+            "No":"5006",
+            "EquipmentName":"Washing Machine",
+            "Status":"In-Use",
+            "OrderNo":"1012",
+            "CustomerName":"Carlos"
+        },
+        {
+            "No":"5007",
+            "EquipmentName":"Dryer",
+            "Status":"In-Use",
+            "OrderNo":"1012",
+            "CustomerName":"Carlos"
+        },
+        {
+            "No":"5008",
+            "EquipmentName":"Dryer",
+            "Status":"Available",
+            "OrderNo":"",
+            "CustomerName":""
+        },
+        {
+            "No":"5009",
+            "EquipmentName":"Iron",
+            "Status":"Repair",
+            "OrderNo":"",
+            "CustomerName":""
+        },
+        {
+            "No":"5010",
+            "EquipmentName":"Washing Machine",
+            "Status":"In-Use",
+            "OrderNo":"1009",
+            "CustomerName":"Tom"
+        },
+        {
+            "No":"5011",
+            "EquipmentName":"Basket",
+            "Status":"Available",
+            "OrderNo":"",
+            "CustomerName":""
+        },
+        {
+            "No":"5012",
+            "EquipmentName":"Basket",
+            "Status":"In-Use",
+            "OrderNo":"1003",
+            "CustomerName":"Lewis"
+        }
+    ]
+}

@@ -1,0 +1,322 @@
+/*  
+Thirumurthy,Sujitraj , UTA ID : 1001830297 
+Selvaraj, Nikil Nandha, UTA ID : 1002004184
+Mandava, Sai Venkat, UTA: 1001955604
+*/
+
+/* FONT USED : Roboto Sans Serif , Oswald Sans Serif ,Damion cursive */
+
+/* COLOR USED :
+  --primary-bg: #2c2c2c;
+  --primary-bg-1: #252525;
+  --primary-bg-2: #757575;
+  --primary-bg-3: #9e9e9e;
+  --secondary-bg: #03a9f4;
+  --secondary-bg-1: #01579b;
+  --secondary-bg-2: #40c4ff;
+  --secondary-bg-3: #b3e5fc;
+  --color-light: #ffffff;
+  --primary-label: #fafafa;
+  --primary-label-1: #cccaca;
+  --primary-label-2: #616161;
+  --secondary-label: #e1f5fe;
+  --secondary-label-1: #80d8ff;
+  --secondary-label-2: #039be5;
+  --state-danger: #c62828;
+  --state-warning: #f9a825;
+  --state-success: #558b2f;
+*/
+body {
+  /* use the font */
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-bg);
+  margin: 0;
+  background-attachment: fixed;
+}
+
+/* manager and admin page container styles */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  color: var(--primary-label-1);
+  font-size: 30px !important;
+  font-weight: 300;
+  letter-spacing: 1px;
+  background-color: var(--primary-bg-1);
+}
+
+.section-header {
+  font-family: "Roboto", "sans-serif";
+  font-size: 24px;
+  font-weight: 300px;
+  letter-spacing: 1px;
+}
+
+.section-container {
+  margin-bottom: 40px;
+}
+
+.section-content {
+  flex: 1;
+  margin-right: 30px;
+  width: 48%;
+}
+
+.manage-container {
+  width: 100%;
+  height: 100%;
+  padding: 40px 0px 40px 40px;
+}
+
+/* Table styles */
+.material-table {
+  min-height: 400px;
+  box-shadow: 0px 0px 3px 3px rgba(156, 156, 156, 0.2);
+  width: 100%;
+  border-spacing: 0px;
+  height: 400px;
+  max-height: 420px;
+  overflow: scroll;
+  /* border:1px solid var(--primary-label-1) */
+}
+
+.table-container {
+  max-height: 420px;
+  height: 400px;
+  overflow: scroll;
+  width: 95%;
+  margin-top: 20px;
+}
+.material-table tr {
+  height: 40px;
+  max-height: 40px;
+  border-bottom: 1px solid var(--primary-bg);
+  padding-left: 25px;
+}
+
+.material-table tr:first-child {
+  position: sticky;
+  top: 0;
+  background-color: #464646 !important;
+  color: white !important;
+}
+
+.material-table tr:nth-child(odd) {
+  background-color: #d9d8d8;
+  color: var(--primary-bg-1);
+}
+
+.material-table td:first-child,
+.material-table th:first-child {
+  padding-left: 25px !important;
+}
+
+.material-table td,
+.material-table th {
+  text-align: left;
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+.material-table td {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--primary-label-2);
+}
+
+.material-table th {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.material-table td:last-child {
+  width: 70px;
+  min-width: 70px;
+}
+
+.material-table td input {
+  width: 100px;
+  padding: 6px;
+  font: "Roboto", "sans-serfiff";
+  border-radius: 13px;
+  border: 1px solid var(--primary-bg-3);
+}
+
+/* styles for edit delete and add actions in table */
+.action-icons img {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+/* Manual order section styles */
+.order-container {
+  padding: 20px 20px 20px 0px;
+}
+
+.order-container div:first-child {
+  margin-right: 50px;
+}
+
+.order-container input {
+  height: 30px;
+  padding: 5px;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  border: 1px solid var(--primary-bg-3);
+}
+
+.order-container select {
+  padding: 5px;
+  height: 40px;
+  width: 255px;
+  border-radius: 3px;
+  border: 1px solid var(--primary-bg-3);
+}
+
+.order-container label {
+  margin-bottom: 10px;
+}
+
+.btn.submit-order {
+  color: var(--secondary-bg-1);
+  border-color: var(--secondary-bg-1);
+  border-radius: 17px;
+  height: 35px !important;
+}
+
+/* Admin page graph and stats section styles */
+
+.graph-view {
+  height: 600px;
+  max-height: 600px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.graph-view .carousel-container {
+  border: 1px solid var(--primary-bg-3);
+  box-shadow: 0px 0px 3px 0px var(--primary-bg-3);
+}
+
+.graph-view img {
+  height: 300px;
+  width: 80%;
+}
+
+.number-card {
+  width: 70%;
+  margin-right: 70px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid var(--primary-bg-3);
+  box-shadow: 0px 0px 2px 0px var(--primary-bg-3);
+}
+
+.number-container {
+  margin-left: 65px;
+  margin-top: 10px;
+}
+
+.slides {
+  display: flex;
+  justify-content: center;
+}
+
+.pill-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pill-container .pills {
+  height: 10px;
+  width: 20px;
+  border: 1px solid var(--primary-bg);
+  border-radius: 15px;
+  margin-right: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.pill-container .pills.active {
+  background-color: var(--primary-bg);
+}
+
+.carousel-container {
+  width: 90%;
+  padding: 25px;
+}
+
+.number-card span:first-child {
+  font-size: 26px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+/* responsive css for manager and admin page */
+@media only screen and (max-device-width: 480px) {
+  .container, .section-header{
+    font-size: 50px !important;
+  }
+  .section-container {
+    flex-direction: column !important;
+    margin-bottom: 30px;
+  }
+
+  .section-content {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+
+  .material-table tr {
+    height: 75px !important;
+    max-height: 75px  !important; }
+
+  .material-table td, .material-table th {
+    font-size: 30px !important;
+  }
+
+  .order-container input, .order-container select, .order-container label {
+    width: 400px  !important;
+    height: 50px !important;
+    padding: 10px !important;
+    font-size: 26px !important;
+  }
+
+  .graph-view {
+      height: 1000px !important;
+      max-height: unset !important;
+      margin-bottom: 20px;
+  }
+  .number-card {
+      height: 200px !important;
+      margin-top: 70px;
+      width: 38%;
+  }
+  .number-card span:first-child {
+      font-size: 50px;
+  }
+
+  .number-card span:last-child {
+    font-size: 30px;
+  }
+  .number-container {
+      flex-wrap: wrap;
+  }
+
+  .btn.submit-order {
+      height: 48px  !important;
+  }
+
+  body {
+      overflow-x: hidden;
+  }
+}

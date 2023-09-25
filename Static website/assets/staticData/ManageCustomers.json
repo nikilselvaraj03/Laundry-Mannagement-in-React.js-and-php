@@ -1,0 +1,84 @@
+{
+    "ManageCustomer": [
+        {
+            "id":38941,
+            "name":"Steven Gerrard",
+            "email":"gerrard@ymail.com",
+            "Address":"728 Beaver Ridge Ave.Tallahassee, FL 32303",
+            "PhoneNo":7651230987,
+            "Gender":"M"
+        },
+        {
+            "id":23875,
+            "name":"Dhoni",
+            "email":"msd@ymail.com",
+            "Address":"835 Highland Street East Lansing, MI 48823",
+            "PhoneNo":1287540981,
+            "Gender":"M"
+        },
+        {
+            "id":34521,
+            "name":"Swetha Chandrasekar",
+            "email":"idiyappam@parambarai.com",
+            "Address":"8123 Wall St.Sunnyside, NY 11104",
+            "PhoneNo":6578981235,
+            "Gender":"F"
+        },
+        {
+            "id":67841,
+            "name":"Monica Geller",
+            "email":"monica@freinds.com",
+            "Address":"8123 Wall St.Sunnyside, NY 11104",
+            "PhoneNo":9874210987,
+            "Gender":"F"
+        },
+        {
+            "id":23875,
+            "name":"Jon Snow",
+            "email":"jonsnow@got.com",
+            "Address":"11 Aspen Ave.Port Richey, FL 34668",
+            "PhoneNo":9812094562,
+            "Gender":"M"
+        },
+        {
+            "id":34521,
+            "name":"Rachel",
+            "email":"rachel@ymail.com",
+            "Address":"479 Oak Meadow Street Halethorpe, MD 21227",
+            "PhoneNo":8947841564,
+            "Gender":"F"
+        },
+        {
+            "id":87982,
+            "name":"Bruce Wayne",
+            "email":"brucewayne@batman.com",
+            "Address":"297 South Ann Dr.Waynesboro, PA 17268",
+            "PhoneNo":1256893245,
+            "Gender":"M"
+        },
+        {
+            "id":12395,
+            "name":"Peter Parker",
+            "email":"peter@ymail.com",
+            "Address":"199 Wayne Avenue Chicago, IL 60621",
+            "PhoneNo":1283540981,
+            "Gender":"M"
+        },
+        {
+            "id":34521,
+            "name":"Jessica",
+            "email":"jessica@ymail.com",
+            "Address":"612 Sussex St.West Roxbury, MA 02132",
+            "PhoneNo":6578981335,
+            "Gender":"F"
+        },
+        {
+            "id":65891,
+            "name":"Jim Clark",
+            "email":"clakey@ymail.com",
+            "Address":"8702 10th St.Goshen, IN 46526",
+            "PhoneNo":6578981335,
+            "Gender":"M"
+        }   
+    ]
+}

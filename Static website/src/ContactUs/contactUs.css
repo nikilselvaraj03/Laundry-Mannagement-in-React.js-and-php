@@ -1,0 +1,135 @@
+/*  
+Thirumurthy,Sujitraj , UTA ID : 1001830297 
+Selvaraj, Nikil Nandha, UTA ID : 1002004184
+Mandava, Sai Venkat, UTA: 1001955604
+*/
+
+/* FONT USED : Roboto Sans Serif , Oswald Sans Serif ,Damion cursive */
+
+/* COLOR USED :
+  --primary-bg: #2c2c2c;
+  --primary-bg-1: #252525;
+  --primary-bg-2: #757575;
+  --primary-bg-3: #9e9e9e;
+  --secondary-bg: #03a9f4;
+  --secondary-bg-1: #01579b;
+  --secondary-bg-2: #40c4ff;
+  --secondary-bg-3: #b3e5fc;
+  --color-light: #ffffff;
+  --primary-label: #fafafa;
+  --primary-label-1: #cccaca;
+  --primary-label-2: #616161;
+  --secondary-label: #e1f5fe;
+  --secondary-label-1: #80d8ff;
+  --secondary-label-2: #039be5;
+  --state-danger: #c62828;
+  --state-warning: #f9a825;
+  --state-success: #558b2f;
+*/
+
+.container {
+  display: grid;
+  background-color: var(--primary-bg-1);
+  width: auto;
+}
+.heading { 
+  display: inline-grid;
+  text-align: center;
+  padding: 30px;
+  color: var(--primary-label-1);
+  font-size: 30px !important;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.innerHeading {
+  display: grid;
+  text-align: center;
+  color: var(--primary-label-2);
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  color: var(--primary-label-2);
+  align-items: center;
+  height: 100%;
+  margin-top: 40px;
+}
+
+.formContainer .field-container {
+  width: 58vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 15px;
+  resize: vertical;
+}
+textarea {
+  width: 97% !important;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 100px;
+  margin: 15px;
+}
+
+.buttons {
+  justify-content: flex-end;
+}
+
+.submit,
+.clear {
+  border-radius: 12px;
+  margin-top: 15px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.submit {
+  color: var(--secondary-bg-1);
+}
+
+.clear {
+  color: var(--state-danger);
+  border-color: var(--state-danger);
+}
+
+body {
+  background-color: white !important;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+
+/* media query for contact us page for device width less than 480px  */
+@media only screen and (max-device-width: 480px){
+  .mediaPhone{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .formContainer .field-container {
+    transform: scale(1.5);
+    margin-top: 100px;
+  }
+  textarea {
+    width: 100% !important;
+  }
+  .buttons{
+    margin-left: 50px !important;
+    justify-content: center;
+  }
+  .container{
+    width: 102%;
+  }
+
+}

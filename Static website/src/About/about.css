@@ -1,0 +1,49 @@
+.headings {
+    display: inline-grid;
+    text-align: left;
+    padding: 30px;
+    color: var(--primary-label-1);
+    font-size: 50px !important;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-left: 10%;
+    padding-bottom: 0px;
+  }
+  .learn-btn {
+    background-color: inherit;
+    border-radius: 3px;
+    padding: 5px 10px;
+    border: 1px solid var(--secondary-bg-1);
+    color: var(--primary-label);
+    width: 20%;
+    height: 50%;
+    margin-bottom: 5%;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  .learn-btn:hover {
+    background-color: var(--secondary-bg-1);
+    border-radius: 3px;
+    padding: 5px 10px;
+    border: 1px solid var(--secondary-bg-1);
+    color: var(--primary-label);
+    width: 20%;
+    height: 50%;
+    margin-bottom: 5%;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  .side-Heading{
+      color: var(--primary-bg);
+      margin-left: 14%;
+  }
+  .about-content{
+      width: 70%;
+      margin: auto;
+      height: auto;
+      border: 0.5px solid lightgrey;
+      border-radius: 2px;
+      margin-bottom: 10%;
+      color: black;
+      padding: 5%;
+  }

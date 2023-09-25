@@ -1,0 +1,84 @@
+{
+    "ManageEmployee": [
+        {
+            "id":6598,
+            "name":"Tim",
+            "email":"tim@instawash.com",
+            "Address":"728 Beaver Ridge Ave.Tallahassee, FL 32303",
+            "PhoneNo":7651230987,
+            "Gender":"M"
+        },
+        {
+            "id":3245,
+            "name":"Tom",
+            "email":"tom@instawash.com",
+            "Address":"835 Highland Street East Lansing, MI 48823",
+            "PhoneNo":1287545981,
+            "Gender":"M"
+        },
+        {
+            "id":9865,
+            "name":"Brianna",
+            "email":"brianna@instawash.com",
+            "Address":"8123 Wall St.Sunnyside, NY 11104",
+            "PhoneNo":6572981235,
+            "Gender":"F"
+        },
+        {
+            "id":9854,
+            "name":"Jessica",
+            "email":"jessica@instawash.com",
+            "Address":"8123 Wall St.Sunnyside, NY 11104",
+            "PhoneNo":9874210687,
+            "Gender":"F"
+        },
+        {
+            "id":3467,
+            "name":"Jhon",
+            "email":"john@instawash.com",
+            "Address":"11 Aspen Ave.Port Richey, FL 34668",
+            "PhoneNo":9812091562,
+            "Gender":"M"
+        },
+        {
+            "id":8765,
+            "name":"Rachel",
+            "email":"rachel@instawash.com",
+            "Address":"479 Oak Meadow Street Halethorpe, MD 21227",
+            "PhoneNo":8947141564,
+            "Gender":"F"
+        },
+        {
+            "id":8798,
+            "name":"Kelly",
+            "email":"kelly@instawash.com",
+            "Address":"297 South Ann Dr.Waynesboro, PA 17268",
+            "PhoneNo":1256843245,
+            "Gender":"M"
+        },
+        {
+            "id":1235,
+            "name":"Peter",
+            "email":"peter@instawash.com",
+            "Address":"199 Wayne Avenue Chicago, IL 60621",
+            "PhoneNo":1283550981,
+            "Gender":"M"
+        },
+        {
+            "id":3421,
+            "name":"Carlos",
+            "email":"carlos@instawash.com",
+            "Address":"612 Sussex St.West Roxbury, MA 02132",
+            "PhoneNo":6578984335,
+            "Gender":"M"
+        },
+        {
+            "id":6581,
+            "name":"Jim Clark",
+            "email":"clakey@instawash.com",
+            "Address":"8702 10th St.Goshen, IN 46526",
+            "PhoneNo":6578911335,
+            "Gender":"M"
+        }   
+    ]
+}

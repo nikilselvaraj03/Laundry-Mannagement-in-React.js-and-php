@@ -1,0 +1,94 @@
+{
+    "ManageService":[
+        {
+            "Sno":9809,
+            "OrderNo":87390,
+            "Name":"Eric",
+            "Address":"150 Birch Hill DriveRapid City, SD 57701",
+            "PhoneNo":9810981256,
+            "AssignedTo":"Tom",
+            "ServiceType":"PickUp"
+        },
+        {
+            "Sno":9509,
+            "OrderNo":87310,
+            "Name":"Llyod",
+            "Address":"349 Shipley St.South Richmond Hill, NY 11419",
+            "PhoneNo":9810581256,
+            "AssignedTo":"David",
+            "ServiceType":"Delivery"
+        },
+        {
+            "Sno":9109,
+            "OrderNo":85590,
+            "Name":"Tim Charles",
+            "Address":"996 Halifax St.Murrells Inlet, SC 29576",
+            "PhoneNo":9812981256,
+            "AssignedTo":"Brianna",
+            "ServiceType":"PickUp"
+        },
+        {
+            "Sno":8921,
+            "OrderNo":83490,
+            "Name":"Neymar",
+            "Address":"553 Parker Ave.Sunnyside, NY 11104",
+            "PhoneNo":9090981256,
+            "AssignedTo":"Clark",
+            "ServiceType":"Delivery"
+        },
+        {
+            "Sno":9831,
+            "OrderNo":88990,
+            "Name":"Kelly",
+            "Address":"82 West Southampton St.Olive Branch, MS 38654",
+            "PhoneNo":9812981256,
+            "AssignedTo":"Brianna",
+            "ServiceType":"PickUp"
+        },
+        {
+            "Sno":9923,
+            "OrderNo":87490,
+            "Name":"Danny",
+            "Address":"8764 Forest St.Saint Johns, FL 32259",
+            "PhoneNo":5678320954,
+            "AssignedTo":"Morrison",
+            "ServiceType":"Delivery"
+        },
+        {
+            "Sno":9009,
+            "OrderNo":87190,
+            "Name":"Eric David",
+            "Address":"622 University Street Millville, NJ 08332",
+            "PhoneNo":9810981256,
+            "AssignedTo":"Tom",
+            "ServiceType":"PickUp"
+        },
+        {
+            "Sno":9809,
+            "OrderNo":87390,
+            "Name":"Tim Paine",
+            "Address":"8858 Nicolls Lane Zeeland, MI 49464",
+            "PhoneNo":9810981256,
+            "AssignedTo":"David",
+            "ServiceType":"Delivery"
+        },
+        {
+            "Sno":9876,
+            "OrderNo":87330,
+            "Name":"Simmon",
+            "Address":"150 Birch Hill DriveRapid City, SD 57701",
+            "PhoneNo":9567658932,
+            "AssignedTo":"Tom",
+            "ServiceType":"Delivery"
+        },
+        {
+            "Sno":9456,
+            "OrderNo":94875,
+            "Name":"Ericson",
+            "Address":"622 University Street Millville, NJ 08332",
+            "PhoneNo":9814981256,
+            "AssignedTo":"Clark",
+            "ServiceType":"PickUp"
+        }
+    ]
+}

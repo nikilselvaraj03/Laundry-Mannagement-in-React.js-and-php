@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Importing external style sheets-->
+  <link href="../../index.css" rel="stylesheet" type="text/css">
+  <link href="../themes/dark.css" rel="stylesheet" type="text/css">
+  <link href="./visitor.css" rel="stylesheet" type="text/css">
+  <!-- import font packages -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+  <!-- Add title and favicon -->
+  <title>InstaWash</title>
+  <link rel="icon" href="./assets/images/outline_local_laundry_service_white_24dp.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Visitor Page Navigation -->
+  <header class="d-flex justify-between nav-header">
+    <div class="header-title d-flex"><a class="logo font-oswald" href="../../index.html">InstaWash</a></div>
+    <nav class="navbar">
+      <ul class="d-flex justify-around flex-direction-row">
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../About/about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Services/services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../ContactUs/contactUs.html">Contact</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./visitor.html">Visitor</a>
+        </li>
+        <form class="form-inline search-control  d-flex align-items-center">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn" type="submit">Search</button>
+        </form>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- side menu navigation for responsiveness -->
+  <header class="d-flex justify-between menu-header" style="display: none;">
+    <div class="header-title d-flex justify-between"><img class="logo font-oswald cursor-pointer"
+        src="../../assets/images/hmaburger-menu.png" height="45px" width="45px" onclick="showSideNav()">
+      <div class="header-title d-flex"><a class="logo font-oswald" href="../../index.html">InstaWash</a></div>
+    </div>
+    <div class="side-bar-navigation fade" id="side-bar-navigation">
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../About/about.html">About</a></li>
+        <li><a href="../Services/services.html">Services</a></li>
+        <li><a href="../ContactUs/contactUs.html">Contact Us</a></li>
+        <li><a href="#" id="side-active-nav">Visitor</a></li>
+      </ul>
+    </div>
+    <script>
+      function showSideNav() {
+        let displayValue = document.getElementById('side-bar-navigation').style.display;
+
+        if (displayValue == 'none' || displayValue == '') { document.getElementById('side-bar-navigation').style.display = 'flex'; } else {
+          document.getElementById('side-bar-navigation').style.display = 'none';
+        }
+      }
+    </script>
+  </header>
+
+  <!--Visitor Page Dashboard section -->
+  <div class="d-flex flex-direction-row container">
+    <div class="font-oswald heading"> Hello Visitor12345</div>
+  </div>
+  <div class="visitor-dashboard-container h-100 d-flex flex-direction-row">
+    <!--Visitor Page Side Navigation Menu-->
+    <div class="sideNav">
+      <ul class="d-fle flex-direction-column space-between">
+        <li class="sideNavItem active" id="drop" onclick="toggleContent('drop')">
+          <a class="sideNav-link" name="ScheduleDrop">Schedule a Drop</a>
+        </li>
+        <li class="sideNavItem" id="register" onclick="toggleContent('register')">
+          <a class="sideNav-link" name="registerIncident">Register an Incident</a>
+        </li>
+        <li class="sideNavItem" id="chat" onclick="toggleContent('chat')">
+          <a class="sideNav-link" name="chats">Chat</a>
+        </li>
+      </ul>
+    </div>
+    <!--Visitor Page Schedule a Drop at the Store -->
+    <div id="ScheduleDrop" class="info-content">
+      <div class="font-oswald d-flex flex-direction-row w-100  justify-center sideNavHeader"> Schedule a Drop</div>
+      <div class="form">
+        <form class="d-flex flex-direction-columan w-100 justify-center sideNavHeader" action="#" method="post"
+          enctype="text/plain">
+          <div class="d-flex flex-direction-column schedule-container">
+            <div class="d-flex flex-direction-row justify-center media">
+              <input type="text" id="fname" name="fname" placeholder="First Name" required>
+              <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+            </div>
+            <div class="d-flex flexdirection-row justify-center media">
+              <input type="text" id="email" name="email" placeholder="Email" required>
+              <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+            </div>
+            <div class="d-flex flexdirection-row justify-center schedule-dropoff media">
+              <div class="schedule d-flex align-items-center">Please Select a Drop Off Time</div>
+              <div class="d-flex justify-between">
+                <input type="date" id="start" name="start" value="2021-10-01" min="2021-10-01" max="2030-12-31"
+                  class="dayTime" required>
+                <input type="time" id="appt" name="appt" min="09:00" max="18:00" class="dayTime" required>
+              </div>
+            </div>
+            <div class="d-flex flex-direction-row justify-center">
+              <select name="service" id="service" class="font-roboto" required>
+                <option hidden selected>Select Required Service</option>
+                <option value="Washing">Washing</option>
+                <option value="Drying">Drying</option>
+                <option value="Ironing">Ironing</option>
+                <option value="Complete Laundry Service">Complete Laundry Service (Washing+Drying+Ironing)</option>
+              </select>
+            </div>
+            <div class="d-flex w-100 flexdirection-row justify-center">
+              <button class="btn clear" type="reset">Clear</button>
+              <button class="btn submit" type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--Visitor Page Register an Incident or a Request-->
+    <div id="registerIncident" class="info-content d-none">
+      <div class="font-oswald d-flex flex-direction-row w-100  justify-center sideNavHeader">Register Incident and
+        Requests</div>
+      <div class="form">
+        <form class="d-flex flex-direction-column w-100 align-items-center" action="#" method="post"
+          enctype="text/plain">
+          <div class="d-flex flex-direction-column register-container">
+            <div class="d-flex flex-direction-row justify-center media">
+              <input type="text" id="fname" name="fname" placeholder="First Name">
+              <input type="text" id="lname" name="lname" placeholder="Last Name">
+            </div>
+            <div class="d-flex flex-direction-row justify-center media">
+              <input type="text" id="email" name="email" placeholder="Email">
+              <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+            </div>
+            <div class="d-flex flex-direction-row justify-center media">
+              <select name="register" id="register" class="font-roboto registerSelect" required>
+                <option hidden selected>Select one...</option>
+                <option value="Incident">Register an Incident</option>
+                <option value="Request">Register a Request</option>
+              </select>
+            </div>
+            <div class="d-flex flex-direction-row justify-center">
+              <textarea id="query" class="font-roboto registerTextArea" name="query"
+                placeholder="Enter your query"></textarea>
+            </div>
+            <div class="d-flex w-100 flex-direction-row justify-center">
+              <button class="btn clear" type="reset">Clear</button>
+              <button class="btn submit" type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--Visitor Page Chat Section with the Management-->
+    <div id="chats" class="info-content d-none">
+      <div class="font-oswald d-flex flex-direction-row w-100 justify-center sideNavHeader">Chat</div>
+      <div class="d-flex flex-direction-column chat-container" style="height: 500px;">
+        <div id="display_message" class="display_message"></div>
+        <form class="d-flex flex-direction-column w-100 chat-area">
+          <div class="d-flex flex-direction-row chatBox">
+            <textarea id="message" class="font-roboto" name="message" placeholder="Enter your Message"></textarea>
+            <button class="btn submit" type="submit" onclick="showMessage()">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    // displaying content based on navgation link selected
+    function toggleContent(id) {
+      var element = document.getElementById(id)
+      var sidenavItems = document.getElementsByClassName('sideNavItem');
+      var contentElements = document.getElementsByClassName('info-content');
+
+      for (var i = 0; i < sidenavItems.length; i++) {
+        if (sidenavItems[i].classList.contains('active')) {
+          sidenavItems[i].classList.remove('active');
+          for (var j = 0; j < contentElements.length; j++) {
+            if (!contentElements[j].classList.contains('d-none')) {
+              contentElements[j].classList.add('d-none');
+            }
+          }
+        }
+      }
+      // Removing the display none class from the element 
+      if (!element.classList.contains('active')) {
+        element.classList.add("active");
+        let elementName = element.getElementsByClassName('sideNav-link')[0].getAttribute('name');
+        document.getElementById(elementName).classList.remove('d-none');
+      }
+    }
+    function showMessage() {
+      // Displaying chat messages
+      event.preventDefault()
+      document.getElementById('display_message').innerHTML += `<p>${document.getElementById("message").value}</p></br>`;
+      document.getElementById("message").value = '';
+    }
+  </script>
+</body>
+
+</html>

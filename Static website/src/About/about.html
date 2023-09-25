@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Import local css files -->
+  <link href="../../index.css" rel="stylesheet" type="text/css">
+  <link href="../themes/dark.css" rel="stylesheet" type="text/css">
+  <link href="../ContactUs/contactUs.css" rel="stylesheet" type="text/css">
+  <link href="./about.css" rel="stylesheet" type="text/css">
+  <link href="../Services/services.css" rel="stylesheet" type="text/css">
+  <!-- import font packages -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Add title and favicon -->
+  <title>InstaWash</title>
+  <link rel="icon" href="./assets/images/outline_local_laundry_service_white_24dp.png" type="image/x-icon">
+</head>
+
+<body>
+  
+  <header class="d-flex justify-between nav-header">
+    <div class="header-title d-flex"><a class="logo font-oswald" href="../../index.html">InstaWash</a></div>
+    <nav class="navbar">
+      <ul class="d-flex justify-around flex-direction-row">
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Services/services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../ContactUs/contactUs.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../authentication/authentication.html">Login/Register</a>
+        </li>
+        <form class="form-inline search-control my-2 my-lg-0 d-flex align-items-center">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </ul>
+    </nav>
+  </header>
+
+   <!-- side menu navigation for responsiveness -->
+   <header class="d-flex justify-between menu-header" style="display: none;">
+    <div class="header-title d-flex justify-between"><img class="logo font-oswald cursor-pointer" src="../../assets/images/hmaburger-menu.png" height="45px" width="45px" onclick="showSideNav()"> 
+      <div class="header-title d-flex"><a class="logo font-oswald" href="../../index.html">InstaWash</a></div></div>
+    <div class="side-bar-navigation fade" id="side-bar-navigation">
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="../Services/">Services</a></li>
+        <li><a href="../ContactUs/contactUs.html">Contact Us</a></li>
+        <li><a href="../authentication/authentication.html">Login / Register</a></li>
+      </ul>
+    </div>
+    <script>
+      function showSideNav() {
+        let displayValue = document.getElementById('side-bar-navigation').style.display;
+        
+        if(displayValue == 'none' || displayValue == '')
+         { document.getElementById('side-bar-navigation').style.display = 'flex'; } else {
+            document.getElementById('side-bar-navigation').style.display = 'none'; }
+      }
+    </script>
+  </header>
+  <div class="container">
+    <div class="font-oswald headings" style="margin-top: 0%;"> Welcome to <br/>INSTAWASH</div>
+    <div style="margin-left: 10%;padding-left: 30px;"><p>No more wait times. No more hassle. Do your laundry at ease with Instawash.</br>
+        Your one-stop solution for getting your clothes washed, dried , ironed and delivered at your doorstep</p></div>
+        <div style="margin-left: 10%;padding-left: 30px;"><button class=" learn-btn">Learn More</button></div>
+    </div>
+    <div>
+       <h1 class="side-Heading">About InstaWash</h1>
+       <div class="about-content">
+         <p>
+          Insta Wash is a start up Laudry Management Company with two branches one in Arlington, Texas and one in Dallas, Texas.
+          We are planning to expand our business to other states in the US. 
+          <p>
+            The Main Philosophy of Instawash is to provide quality service to our customers. At Insta Wash we provide various services to our customers which will help them to do laundry at the comfort of their home. Look into our service page for more information regarding the service provided at Insta Wash.
+          </p>
+          <p>
+            The Equipement used at our Instawash are state of the art machine. This allows us to provide cutomers the best overall laundry service with customization for each and every item.
+          </p>
+          <b> Our Motto at Instawash : No task is too difficult, no request too demanding. We rise to the challenge, day by day and year after year. </b>
+        </p>
+      </div>
+    </div>
+  </body>
+  </html>

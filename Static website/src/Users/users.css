@@ -1,0 +1,277 @@
+/*  
+Thirumurthy,Sujitraj , UTA ID : 1001830297 
+Selvaraj, Nikil Nandha, UTA ID : 1002004184
+Mandava, Sai Venkat, UTA: 1001955604
+*/
+
+/* FONT USED : Roboto Sans Serif , Oswald Sans Serif ,Damion cursive */
+
+/* COLOR USED :
+  --primary-bg: #2c2c2c;
+  --primary-bg-1: #252525;
+  --primary-bg-2: #757575;
+  --primary-bg-3: #9e9e9e;
+  --secondary-bg: #03a9f4;
+  --secondary-bg-1: #01579b;
+  --secondary-bg-2: #40c4ff;
+  --secondary-bg-3: #b3e5fc;
+  --color-light: #ffffff;
+  --primary-label: #fafafa;
+  --primary-label-1: #cccaca;
+  --primary-label-2: #616161;
+  --secondary-label: #e1f5fe;
+  --secondary-label-1: #80d8ff;
+  --secondary-label-2: #039be5;
+  --state-danger: #c62828;
+  --state-warning: #f9a825;
+  --state-success: #558b2f;
+*/
+
+.container {
+  background-color: var(--primary-bg-1);
+  width: auto;
+  height: 100px;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.heading {
+  padding: 20px;
+  color: var(--primary-label-1);
+  font-size: 30px !important;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.sideNav {
+  height: 100%;
+  width: 250px;
+  z-index: 1;
+  left: 0;
+  background-color: var(--primary-bg-1);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sideNav ul {
+  list-style: none;
+  align-items: center;
+}
+
+.sideNavItem {
+  color: var(--primary-label-1);
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.sideNavItem a {
+  color: var(--primary-label-1);
+  text-decoration: none;
+}
+.sideNavItem.active .sideNav-link {
+  color: var(--primary-label) !important;
+  border-bottom: 4px solid var(--secondary-label-2);
+  border-radius: 4px;
+}
+
+.sideNavItem:hover {
+  transform: scale(1.1);
+}
+
+.sideNavHeader {
+  height: 50px;
+  color: var(--primary-label-1);
+  font-size: 26px !important;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 25px 0px;
+}
+
+.register-container {
+  width: 50%;
+}
+.subscribe-container {
+  width: 75%;
+}
+.order-container {
+  width: 50%;
+}
+
+
+.info-content {
+  width: 100%;
+}
+input[type="text"],
+input[type="number"],
+input [type="email"] {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 15px;
+  resize: vertical;
+}
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 15px;
+  resize: vertical;
+}
+textarea {
+  width: 100% !important;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 100px;
+  margin: 15px;
+}
+
+.submit,
+.clear {
+  width: 10%;
+  border-radius: 12px;
+  margin-top: 15px;
+  cursor: pointer;
+  margin-right: 20px;
+  background-color: inherit;
+}
+.subscribe {
+  width: 14%;
+  border-radius: 12px;
+  margin-top: 15px;
+  cursor: pointer;
+  margin-right: 20px;
+  background-color: inherit;
+}
+
+.clear:hover {
+  border-color: var(--state-danger);
+  color: var(--state-danger);
+}
+
+.submit:hover {
+  border-color: var(--state-success);
+  color: var(--state-success);
+}
+.subscribe:hover {
+  border-color: var(--state-success);
+  color: var(--state-success);
+}
+.orderButton {
+  width: 25%;
+  border-radius: 12px;
+  margin-top: 15px;
+  cursor: pointer;
+  margin-right: 20px;
+  background-color: inherit;
+}
+.orderButton:hover {
+  border-color: var(--state-success);
+  color: var(--state-success);
+}
+
+/* media query for user page for device width less than 480px  */
+@media only screen and (max-device-width: 480px){
+  .media{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+    textarea {
+    width: 91% !important;
+  }
+  .order-container{
+    width: 45%;
+    transform: scale(1.7);
+    margin-top: 200px;
+  }
+  select{
+    width: 91%;
+  }
+  .orderButton  {
+    cursor: pointer;
+    width: 40%;
+  }
+  .orderButton:hover {
+    border-color: var(--state-success);
+    color: var(--state-success);
+  }
+  .clear:hover {
+    border-color: var(--state-danger);
+    color: var(--state-danger);
+  }
+  .clear{
+    width: 20%;
+  }
+  .register-container {
+    width: 50%;
+    transform: scale(1.7);
+    margin-top: 200px;
+  }
+  .registerSelect{
+    width: 92%
+  };
+  .registerTextArea{
+    width: 92% !important;
+  }
+  .container {
+    width: 102%;
+    height: 150px !important;
+  }
+  .submit{
+    width: 20% !important;
+  }
+  .subscribe-container{
+    width: 50%;
+    transform: scale(1.3);
+    margin-top: 100px;
+  }
+  .subscribeSelect{
+    width: 92% !important;
+  }
+  .subscribeButton{
+    flex-direction: row;
+  }
+  .subscribe{
+    width:20%
+  }
+  .subscribe:hover {
+    border-color: var(--state-success);
+    color: var(--state-success);
+  }
+
+  .info-content .chat-container {
+    height: calc(100vh - 100px)  !important;
+  }
+  .display_message {
+    max-height: 80%;
+  }
+  .display_message p{
+    font-size: 35px;
+    border-radius: 20px;
+  }
+  .display_message textarea {
+    width: 90% !important;
+  }
+  .heading {
+    font-size: 45px !important;
+    margin-left: 100px;
+  }
+  .sideNavHeader {
+    font-size: 40px !important;
+  }
+  .sideNav {
+    width: 400px !important;
+    font-size: 28px !important;
+  }
+  .chatBox {
+    width: 75%;
+    transform: scale(1.5);
+  }
+}
+
+

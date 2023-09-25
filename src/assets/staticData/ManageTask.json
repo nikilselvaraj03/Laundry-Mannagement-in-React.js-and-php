@@ -1,0 +1,67 @@
+{
+    "ManageTask":[
+        {
+            "Sno":5489,
+            "CustomerName":"David",
+            "Assigned To":"Tim",
+            "Desc":"Light Wash",
+            "Services":"Washing"
+        },
+        {
+            "Sno":5560,
+            "CustomerName":"Tom",
+            "Assigned To":"Charles",
+            "Desc":"Low Heat",
+            "Services":"Drying"
+        },
+        {
+            "Sno":5439,
+            "CustomerName":"Harvey",
+            "Assigned To":"Dent",
+            "Desc":"Heavy Wash",
+            "Services":"Washing"
+        },
+        {
+            "Sno":5679,
+            "CustomerName":"Schumacher",
+            "Assigned To":"Eric",
+            "Desc":"Steam Press",
+            "Services":"Ironing"
+        },
+        {
+            "Sno":5139,
+            "CustomerName":"Kimi",
+            "Assigned To":"Carlos",
+            "Desc":"Medium Wash & Low Heat",
+            "Services":"Washing & Drying"
+        },
+        {
+            "Sno":5094,
+            "CustomerName":"Jamie",
+            "Assigned To":"Trent",
+            "Desc":"Medium Wash",
+            "Services":"Washing"
+        },
+        {
+            "Sno":5591,
+            "CustomerName":"Karl",
+            "Assigned To":"Brianna",
+            "Desc":"Steam Press",
+            "Services":"Ironing"
+        },
+        {
+            "Sno":5459,
+            "CustomerName":"Jim",
+            "Assigned To":"Lando",
+            "Desc":"Normal Wash",
+            "Services":"Washing"
+        },
+        {
+            "Sno":5230,
+            "CustomerName":"Katrina",
+            "Assigned To":"Ross",
+            "Desc":"Heavy Wash & Light Heat",
+            "Services":"Washing & Drying"
+        }
+    ]
+}

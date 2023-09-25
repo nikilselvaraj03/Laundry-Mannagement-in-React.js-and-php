@@ -1,0 +1,12 @@
+@media only screen and (max-device-width: 480px){
+    .sideNavHeader {
+        font-size: 25px !important;
+      }
+      .sideNav {
+        width:  57% !important;
+        font-size: 12px !important;
+        height: 140%!important  ;
+      }
+      
+
+}

@@ -1,0 +1,34 @@
+{
+    "ManageManagers": [
+        {
+            "id":10001,
+            "name":"Tom David",
+            "email":"tom.davis@instawash.com",
+            "Address":"728 Beaver Ridge Ave.Tallahassee, FL 32303",
+            "PhoneNo":5907863456,
+            "Gender":"M",
+            "Position":"General Manager",
+            "Branch":"Arlington,TX"
+        },
+        {
+            "id":10002,
+            "name":"Harvey",
+            "email":"harvey@instawash.com",
+            "Address":"835 Highland Street East Lansing, MI 48823",
+            "PhoneNo":9806573245,
+            "Gender":"M",
+            "Position":"Store Manager",
+            "Branch":"Arlington,TX"
+        },
+        {
+            "id":10003,
+            "name":"Sharon Carter",
+            "email":"sharon@instawash.com",
+            "Address":"8123 Wall St.Sunnyside, NY 11104",
+            "PhoneNo":9805678943,
+            "Gender":"F",
+            "Position":"General Manager",
+            "Branch":"Dallas,TX"
+        }
+    ]
+}

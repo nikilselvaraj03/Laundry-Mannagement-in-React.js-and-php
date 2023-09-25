@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Import local css/ JS files -->
+    <link href="./manager.css" rel="stylesheet" type="text/css">
+    <link href="../themes/dark.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./manager.js"></script>
+
+    <!-- import font packages -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    <!-- Add title and favicon -->
+    <title>InstaWash</title>
+    <link rel="icon" href="./assets/images/outline_local_laundry_service_white_24dp.png" type="image/x-icon">
+</head>
+
+<body class="d-flex flex-direction-column">
+    <!-- Header element conatining navigation bar and links -->
+    <header class="d-flex justify-between nav-header">
+        <div class="header-title d-flex"><a class="logo font-oswald" href="../../index.html">InstaWash</a></div>
+        <nav class="navbar">
+            <ul class="d-flex justify-around flex-direction-row">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../About/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Services/services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ContactUs/contactUs.html">Contact</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" id="active-nav" href="#">Manager</a>
+                </li>
+                <form class="form-inline search-control  d-flex align-items-center">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn" type="submit">Search</button>
+                </form>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- side menu navigation for responsiveness -->
+    <header class="d-flex justify-between menu-header" style="display: none;">
+        <div class="header-title d-flex justify-between"><img class="logo font-oswald cursor-pointer"
+                src="../../assets/images/hmaburger-menu.png" height="45px" width="45px" onclick="showSideNav()">
+            <div class="header-title d-flex"><a class="logo font-oswald" href="../../index.html">InstaWash</a></div>
+        </div>
+        <div class="side-bar-navigation fade" id="side-bar-navigation">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../About/about.html">About</a></li>
+                <li><a href="../Services/services.html">Services</a></li>
+                <li><a href="../ContactUs/contactUs.html">Contact Us</a></li>
+                <li><a href="#" id="side-active-nav">Manager</a></li>
+            </ul>
+        </div>
+        <script>
+            function showSideNav() {
+                let displayValue = document.getElementById('side-bar-navigation').style.display;
+
+                if (displayValue == 'none' || displayValue == '') { document.getElementById('side-bar-navigation').style.display = 'flex'; } else {
+                    document.getElementById('side-bar-navigation').style.display = 'none';
+                }
+            }
+        </script>
+    </header>
+
+    <section>
+
+        <!-- Header section title -->
+        <div class="container" id="heading-container">
+            <div class="font-oswald heading"> Manage Daily Tasks </div>
+        </div>
+
+        <!-- Admin page graph ans stats -->
+        <div id="graph-view" class="graph-view d-flex flex-direction-column w-100">
+            <div class="d-flex w-100 number-container">
+                <div class="number-card font-oswald">
+                    <span>Total No of users:</span>
+                    <span class="font-roboto">598</span>
+                </div>
+                <div class="number-card font-oswald">
+                    <span>Active users:</span>
+                    <span class="font-roboto">422</span>
+                </div>
+                <div class="number-card font-oswald">
+                    <span>Total No of employees:</span>
+                    <span class="font-roboto">13</span>
+                </div>
+                <div class="number-card font-oswald">
+                    <span>No of Equipments available:</span>
+                    <span class="font-roboto">45</span>
+                </div>
+            </div>
+            <div class="carousel-container d-flex flex-direction-column align-items-center">
+                <div class="slides fade w-100">
+                    <img src="../../assets/images/customer-graph-1.png">
+                </div>
+
+                <div class="slides fade w-100">
+                    <img src="../../assets/images/business-graph.svg">
+                </div>
+
+                <div class="slides fade w-100">
+                    <img src="../../assets/images/700px-7.1_stacked_area_chart.png">
+                </div>
+
+                <!-- The pills -->
+                <div class="pill-container">
+                    <span class="pills" onclick="currentSlide(1)"></span>
+                    <span class="pills" onclick="currentSlide(2)"></span>
+                    <span class="pills" onclick="currentSlide(3)"></span>
+                </div>
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("slides");
+                        var pills = document.getElementsByClassName("pills");
+                        if (n > slides.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = slides.length }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < pills.length; i++) {
+                            pills[i].className = pills[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "flex";
+                        pills[slideIndex - 1].className += " active";
+                    }
+                </script>
+            </div>
+        </div>
+
+        <!-- Admin and manager section tables structure -->
+        <div class="manage-container d-flex flex-direction-column align-items-around justify-evenly">
+
+            <!-- Horizontal row section containing multiple tables -->
+            <div class="d-flex flex-direction-row justify-around section-container">
+
+                <!-- Manage Order table -->
+                <div class="d-flex flex-direction-column align-items-start section-content"><span
+                        class="font-oswald section-header">Manage Order</span>
+                    <div class="table-container">
+                        <table id="order-table" class="material-table">
+                            <tbody>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Order#</th>
+                                    <th>Customer Name</th>
+                                    <th>Phone</th>
+                                    <th>Type</th>
+                                    <th class="text-align-center"><img class="cursor-pointer" title="Add Record"
+                                            onclick="addOrder()" src="../../assets/images/plus.png" height="13px"
+                                            width="13px"></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Manage equipment table -->
+                <div class="d-flex flex-direction-column align-items-start section-content"><span
+                        class="font-oswald section-header">Manage Equipment</span>
+                    <div class="table-container">
+                        <table id="equipment-table" class="material-table">
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Status</th>
+                                <th>Order#</th>
+                                <th>Customer</th>
+                                <th class="text-align-center"><img class="cursor-pointer" title="Add Record"
+                                        onclick="addEquipment()" src="../../assets/images/plus.png" height="13px"
+                                        width="13px"></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horizontal row section containing multiple tables -->
+            <div class="d-flex flex-direction-row justify-around section-container" id="manager-actions">
+
+                <!-- Manual Order table -->
+                <div class="d-flex flex-direction-column align-items-start section-content"><span
+                        class="font-oswald section-header">Manual Order</span>
+                    <div class="d-flex flex-direction-row order-container">
+                        <div class="d-flex flex-direction-column justify-between">
+                            <input type="text" placeholder="Customer Name" required="required">
+                            <input type="text" placeholder="Phone Number" required="required" maxlength="10">
+                            <label for="cars">Service Type:</label>
+                            <select name="services" id="services">
+                                <option value="Washing">Washing</option>
+                                <option value="Drying">Drying</option>
+                                <option value="Ironing">Ironing</option>
+                                <option value="Pickup">Pickup</option>
+                                <option value="Delivery">Delivery</option>
+                            </select>
+                        </div>
+                        <div class="d-flex flex-direction-column justify-between">
+                            <input type="text-area" placeholder="Description">
+                            <input type="submit" class="btn submit-order">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Manage tasks table -->
+                <div class="d-flex flex-direction-column align-items-start section-content"><span
+                        class="font-oswald section-header">Manage Tasks</span>
+                    <div class="table-container">
+                        <table id="tasks-table" class="material-table">
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Assigned to</th>
+                                <th>Desc</th>
+                                <th>Services</th>
+                                <th class="text-align-center"><img class="cursor-pointer" title="Add Record"
+                                        onclick="addTasks()" src="../../assets/images/plus.png" height="13px"
+                                        width="13px"></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horizontal row section containing multiple tables -->
+            <div class="d-flex flex-direction-row justify-around section-container">
+
+                <!-- Manage Customers table -->
+                <div class="d-flex flex-direction-column align-items-start section-content"><span
+                        class="font-oswald section-header">Manage Customers</span>
+                    <div class="table-container">
+                        <table id="customer-table" class="material-table">
+                            <tbody>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Address</th>
+                                    <th>Email</th>
+                                    <th>Phone no</th>
+                                    <th>Gender</th>
+                                    <th class="text-align-center"><img class="cursor-pointer" onclick="addCustomer()"
+                                            title="Add Record" src="../../assets/images/plus.png" height="13px"
+                                            width="13px"></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Manage Pickup/Delivery table -->
+                <div class="d-flex flex-direction-column align-items-start section-content"><span
+                        class="font-oswald section-header">Manage Pickup / Delivery</span>
+                    <div class="table-container">
+                        <table id="delivery-table" class="material-table">
+                            <tr>
+                                <th>#</th>
+                                <th>Order#</th>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th>Phone no</th>
+                                <th>Assigned to</th>
+                                <th>Service type</th>
+                                <th class="text-align-center"><img class="cursor-pointer" onclick="addDeliveries()"
+                                        title="Add Record" src="../../assets/images/plus.png" title="Add a record"
+                                        height="13px" width="13px"></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horizontal row section containing Employee table -->
+            <div class="d-flex flex-direction-row justify-around section-container" id='employee-table-container'>
+                <div class="d-flex flex-direction-column align-items-start section-content"><span
+                        class="font-oswald section-header">Manage Employees</span>
+                    <div class="table-container">
+                        <table id="employee-table" class="material-table">
+                            <tbody>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Address</th>
+                                    <th>Phone no</th>
+                                    <th>Gender</th>
+                                    <th class="text-align-center"><img class="cursor-pointer" onclick="addEmployee()"
+                                            title="Add Record" src="../../assets/images/plus.png" height="13px"
+                                            width="13px"></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horizontal row section containing Manager table -->
+            <div class="d-flex flex-direction-row justify-around section-container" id='manager-table-container'>
+                <div class="d-flex flex-direction-column align-items-start section-content"><span
+                        class="font-oswald section-header">Manage Managers</span>
+                    <div class="table-container">
+                        <table id="manager-table" class="material-table">
+                            <tbody>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Address</th>
+                                    <th>Phone no</th>
+                                    <th>Gender</th>
+                                    <th>Position</th>
+                                    <th>Location</th>
+                                    <th class="text-align-center"><img class="cursor-pointer" onclick="addManager()"
+                                            title="Add Record" src="../../assets/images/plus.png" height="13px"
+                                            width="13px"></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

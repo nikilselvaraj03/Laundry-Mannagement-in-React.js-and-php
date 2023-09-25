@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Import local css files -->
+  <link href="./index.css" rel="stylesheet" type="text/css">
+  <link href="./src/themes/dark.css" rel="stylesheet" type="text/css">
+
+  <!-- import font packages -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+  <!-- Add title and favicon -->
+  <title>InstaWash</title>
+  <link rel="icon" href="./assets/images/outline_local_laundry_service_white_24dp.png" type="image/x-icon">
+</head>
+
+<body class="d-flex flex-direction-column">
+  <!-- navigation bar and links -->
+  <header class="d-flex justify-between nav-header">
+    <div class="header-title d-flex"><a class="logo font-oswald" href="./index.html">InstaWash</a></div>
+    <nav class="navbar">
+      <ul class="d-flex justify-around flex-direction-row">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./src/About/about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./src/Services/services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./src/ContactUs/contactUs.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./src/authentication/authentication.html">Login/Register</a>
+        </li>
+        <form class="form-inline search-control  d-flex align-items-center">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn" type="submit">Search</button>
+        </form>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- side menu navigation for responsiveness -->
+  <header class="d-flex justify-between menu-header" style="display: none;">
+    <div class="header-title d-flex justify-between"><img class="logo font-oswald cursor-pointer" src="./assets/images/hmaburger-menu.png" height="45px" width="45px" onclick="showSideNav()"> 
+      <div class="header-title d-flex"><a class="logo font-oswald" href="./index.html">InstaWash</a></div></div>
+    <div class="side-bar-navigation fade" id="side-bar-navigation">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./src/About/about.html">About</a></li>
+        <li><a href="./src/Services/services.html">Services</a></li>
+        <li><a href="./src/ContactUs/contactUs.html">Contact Us</a></li>
+        <li><a href="./src/authentication/authentication.html">Login / Register</a></li>
+      </ul>
+    </div>
+    <script>
+      function showSideNav() {
+        let displayValue = document.getElementById('side-bar-navigation').style.display;
+        if(displayValue == 'none' || displayValue == '')
+         { document.getElementById('side-bar-navigation').style.display = 'flex'; } else {
+            document.getElementById('side-bar-navigation').style.display = 'none'; }
+      }
+    </script>
+  </header>
+
+  
+  <section>
+    <!-- header seaction describing Instawash -->
+    <div class="poster d-flex justify-around">
+      <img src="./assets/images/laundry.png" height="400" width="400">
+      <div class="d-flex flex-direction-column justify-center">
+        <p class="font-oswald text-header">Get your clothes washed and delivered in no time.</p>
+        <p class="text-description">No more wait times. No more hassle. Do your laundry at ease with Instawash.</br>
+          Your one-stop solution for getting your clothes washed, dried , ironed and delivered at your doorstep.</p>
+      </div>
+    </div>
+
+    <!-- Info section below header -->
+    <div class="d-flex flex-direction-row justify-around info-link">
+      <p>
+        <span class="font-oswald text-header"> We Wash, Dry and Iron your clothes</span></br></br>
+        <span class="about-description">Care and quality are the core values of InstaWash dry cleaning and laundry
+          service.</br>
+          Our mission is to provide consistent, quality clothing care with a level of service that exceeds your
+          expectations</span></br>
+        </br><a href="./src/About/about.html" class="services-link">Read more about us <img class="arrow-right"
+            src="./assets/images/arrow-right-white.png"></a>
+      </p>
+      <img src="./assets/images/laundry-women.png">
+    </div>
+    <hr class="page-break">
+    <div class="d-flex flex-direction-row justify-around info-link">
+      <img src="./assets/images/pickup-delivery.png">
+      <p>
+        <span class="font-oswald text-header">
+          And the cherry on top </br> We do Pickup / Delivery </span></br></br>
+        <a class="services-link" href="./src/Services/services.html">Explore our Services <img class="arrow-right"
+            src="./assets/images/arrow-right-white.png"></a>
+      </p>
+    </div>
+    <hr class="page-break">
+
+    <!-- carousel content -->
+    <div class="carousel-container d-flex flex-direction-column align-items-center">
+      <div class="slides fade w-100">
+        <div class="carousel d-flex align-items-center justify-around">
+          <span>
+            <p class="text-header font-damion offer-info">Flat 20% off</p> <span class="font-oswald"> first time
+              customers only. Terms & Condtions apply.</span>
+          </span>
+          <img src="./assets/images/special-offer.png" height="280px" width="280px">
+        </div>
+      </div>
+
+      <div class="slides fade w-100">
+        <div class="carousel review-content d-flex justify-around">
+          <div class="font-oswald d-flex flex-direction-column justify-center">Pricing</div>
+          <div class="font-oswald d-flex flex-direction-column justify-evenly price-listing font-roboto">
+            <span>Washing: &ensp; 2$ per pound</span>
+            <span>Drying: &ensp; 2$ per pound</span>
+            <span>Ironing: &ensp; 4$ per pound</span>
+          </div>
+          <div class="font-oswald d-flex flex-direction-column justify-evenly font-roboto">
+            <span>Pickup: &ensp; 1.75$</span>
+            <span>Delivery: &ensp; 1.75$</span>
+            <span>Late Services: &ensp; 15% additional cost</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="slides fade w-100">
+        <div class="carousel review-content d-flex flex-direction-column">
+          <div class="font-oswald d-flex justify-center">Customer Reviews</div>
+          <div class="customer-review d-flex w-100"><span>Jacob<img src="./assets/images/4stars.png"></span>
+            <span>Alan<img src="./assets/images/5stars.png"></span></div>
+          <div class="customer-review d-flex w-100"><span>Maria<img src="./assets/images/4andhalfstars.png"></span>
+            <span>Diaz<img src="./assets/images/3andhalfstars.png"></span></div>
+        </div>
+      </div>
+
+      <!-- The pills -->
+      <div class="pill-container">
+        <span class="pills" onclick="currentSlide(1)"></span>
+        <span class="pills" onclick="currentSlide(2)"></span>
+        <span class="pills" onclick="currentSlide(3)"></span>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("slides");
+          var pills = document.getElementsByClassName("pills");
+          if (n > slides.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = slides.length }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < pills.length; i++) {
+            pills[i].className = pills[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "flex";
+          pills[slideIndex - 1].className += " active";
+        }
+      </script>
+    </div>
+  </section>
+ 
+</body>
+
+</html>

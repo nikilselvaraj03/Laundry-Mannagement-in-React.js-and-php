@@ -1,0 +1,245 @@
+.schedule-container{
+    width: 100%;
+}
+.schedule-form input[type="text"] ,.schedule-form  input[type="number"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 15px;
+    resize: vertical;
+  }
+  select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 15px;
+    resize: vertical;
+  }
+  textarea {
+    width: 100% !important;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 100px;
+    margin: 15px;
+  }
+
+.submit,
+.clear {
+  width: 15% !important;
+  border-radius: 12px;
+  margin-top: 15px;
+  cursor: pointer;
+  margin-right: 20px;
+  background-color: inherit;
+}
+.subscribe{
+    width: 14%;
+    border-radius: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: inherit;
+}
+
+.clear:hover {
+    border-color: var(--state-danger);
+    color: var(--state-danger);
+}
+
+.submit:hover {
+    border-color: var(--state-success);
+    color:var(--state-success);
+}
+.subscribe:hover {
+    border-color: var(--state-success);
+    color:var(--state-success);
+}
+
+.schedule{
+    font-size: 17px !important;
+    font-weight: 300 !important;
+}
+
+.schedule-dropoff div{ 
+    margin: 15px;
+    flex: 1;
+}
+
+.schedule-dropoff input{
+    height: 25px;
+    padding: 5px;
+}
+
+.schedule-dropoff input:first-child {
+    flex: 2;
+    margin-right: 10px;
+}
+
+.schedule-dropoff input:last-child {
+    flex: 1;
+}
+.chatMessage{
+    justify-content: flex-end;
+}
+.dayTime{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#snackbar-schedule{
+  visibility: hidden; 
+  min-width: 250px; 
+  margin-left: -125px;
+  background-color: rgb(154, 211, 122);
+  color: rgb(37, 37, 37); 
+  text-align: center;
+  border-radius: 5px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+#snackbar-schedule.danger{
+  background-color: rgb(214, 103, 103);
+  color: white;
+}
+
+
+#snackbar-schedule.show {
+  visibility: visible; 
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+/* @media only screen and (max-device-width: 480px){
+    .container{
+      width: 102%;
+      height: 150px !important;
+    }
+    .media{
+      display: flex;    
+      justify-content: space-around;
+      flex-direction: column;
+    }
+    .schedule-container{
+      width: 60%;
+      transform: scale(1);
+    }
+    .schedule {
+    font-size: 20px !important;
+    font-weight: 300 !important;
+    justify-content: center;
+  }
+  .sideNavHeader {
+    font-size: 40px !important;
+  }
+  .sideNav {
+    width: 400px !important;
+    font-size: 28px !important;
+  }
+  .submit,
+  .clear {
+    width: 25% !important;
+  }
+  .info-content .chat-container {
+    height: calc(100vh - 100px)  !important;
+  }
+  .display_message {
+    max-height: 80%;
+  }
+  .display_message p{
+    font-size: 35px;
+    border-radius: 20px;
+  }
+  .display_message textarea {
+    width: 90% !important;
+  }
+  .chatBox {
+    width: 75%;
+    transform: scale(1.5);
+  }
+  .clear:hover {
+    border-color: var(--state-danger);
+    color: var(--state-danger);
+}
+  .submit:hover {
+    border-color: var(--state-success);
+    color:var(--state-success);
+}
+} */
+
+@media only screen and (max-device-width: 480px){
+  .container{
+    width: 104%;
+    height: 100px !important;
+  }
+  .media{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .schedule-container{
+    width: 100%;
+    transform: scale(1);
+  }
+  .schedule {
+  font-size: 20px !important;
+  font-weight: 300 !important;
+  justify-content: center;
+}
+.heading {
+  font-size: 25px !important;
+  margin-left: 100px;
+}
+.sideNavHeader {
+  font-size: 25px !important;
+  padding: 10px 0px !important;
+}
+.sideNav {
+  width: 100% !important;
+  font-size: 15px !important;
+  height: 140% !important;
+}
+.submit,
+.clear {
+  width: 25% !important;
+}
+
+.clear:hover {
+  border-color: var(--state-danger);
+  color: var(--state-danger);
+}
+.submit:hover {
+  border-color: var(--state-success);
+  color:var(--state-success);
+}
+}

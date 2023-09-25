@@ -1,0 +1,88 @@
+{
+    "Manage Orders":[
+        { 
+            "No" : 1,
+            "OrderNo":"1001",
+            "CustomerName":"David",
+            "Phone":"5819349876",
+            "Type":"W"
+        },
+        {
+            "No" : 2,
+            "OrderNo":"1002",
+            "CustomerName":"Tom",
+            "Phone":"7859859876",
+            "Type":"D"
+        },
+        {
+            "No" : 3,
+            "OrderNo":"1003",
+            "CustomerName":"Angela",
+            "Phone":"5418391234",
+            "Type":"D"
+        },
+        {
+            "No" : 4,
+            "OrderNo":"1004",
+            "CustomerName":"Angela",
+            "Phone":"5418391234",
+            "Type":"D"
+        },
+        {
+            "No" : 5,
+            "OrderNo":"1005",
+            "CustomerName":"Aravind",
+            "Phone":"6789128765",
+            "Type":"I"
+        },
+        {
+            "No" : 6,
+            "OrderNo":"1006",
+            "CustomerName":"Nelson",
+            "Phone":"6781230985",
+            "Type":"D"
+        },
+        {
+            "No" : 7,
+            "OrderNo":"1007",
+            "CustomerName":"Fedric",
+            "Phone":"678123654",
+            "Type":"D"
+        },
+        {
+            "No" : 8,
+            "OrderNo":"1008",
+            "CustomerName":"David",
+            "Phone":"7651239084",
+            "Type":"D"
+        },
+        {
+            "No" : 9,
+            "OrderNo":"1009",
+            "CustomerName":"Tom",
+            "Phone":"3429840912",
+            "Type":"D"
+        },
+        {
+            "No" : 10,
+            "OrderNo":"1010",
+            "CustomerName":"Charles",
+            "Phone":"8723408643",
+            "Type":"I"
+        },
+        {
+            "No" : 11,
+            "OrderNo":"1011",
+            "CustomerName":"Lewis",
+            "Phone":"083214590",
+            "Type":"D"
+        },
+        {
+            "No" : 12,
+            "OrderNo":"1012",
+            "CustomerName":"Carlos",
+            "Phone":"1908756355",
+            "Type":"W"
+        }
+    ]
+}

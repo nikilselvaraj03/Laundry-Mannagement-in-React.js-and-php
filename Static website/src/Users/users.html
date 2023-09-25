@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="../../index.css" rel="stylesheet" type="text/css">
+  <link href="../themes/dark.css" rel="stylesheet" type="text/css">
+  <link href="./users.css" rel="stylesheet" type="text/css">
+  <!-- import font packages -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+  <!-- title and favicon section -->
+  <title>InstaWash</title>
+  <link rel="icon" href="./assets/images/outline_local_laundry_service_white_24dp.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Navigation Bar Section  -->
+  <header class="d-flex justify-between nav-header">
+    <div class="header-title d-flex"><a class="logo font-oswald" href="../../index.html">InstaWash</a></div>
+    <nav class="navbar">
+      <ul class="d-flex justify-around flex-direction-row">
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../About/about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Services/services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../ContactUs/contactUs.html">Contact</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./users.html">User</a>
+        </li>
+        <form class="form-inline search-control  d-flex align-items-center">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn" type="submit">Search</button>
+        </form>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- side menu navigation for responsiveness -->
+  <header class="d-flex justify-between menu-header" style="display: none;">
+    <div class="header-title d-flex justify-between"><img class="logo font-oswald cursor-pointer"
+        src="../../assets/images/hmaburger-menu.png" height="45px" width="45px" onclick="showSideNav()">
+      <div class="header-title d-flex"><a class="logo font-oswald" href="../../index.html">InstaWash</a></div>
+    </div>
+    <div class="side-bar-navigation fade" id="side-bar-navigation">
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../About/about.html">About</a></li>
+        <li><a href="../Services/services.html">Services</a></li>
+        <li><a href="../ContactUs/contactUs.html">Contact Us</a></li>
+        <li><a href="#" id="side-active-nav">User</a></li>
+      </ul>
+    </div>
+    <script>
+      function showSideNav() {
+        let displayValue = document.getElementById('side-bar-navigation').style.display;
+
+        if (displayValue == 'none' || displayValue == '') { document.getElementById('side-bar-navigation').style.display = 'flex'; } else {
+          document.getElementById('side-bar-navigation').style.display = 'none';
+        }
+      }
+    </script>
+  </header>
+
+  <!--Navigation Bar Section Ends-->
+  <div class="d-flex flex-direction-row container">
+    <div class="font-oswald heading"> Hello User_Dragon_301287 </div>
+  </div>
+  <!--Side Menu Bar-->
+  <div class="user-dashboard-container h-100 d-flex flex-direction-row">
+    <div class="sideNav">
+      <ul class="d-fle flex-direction-column space-between">
+        <li class="sideNavItem active" id="order" onclick="toggleContent('order')">
+          <a class="sideNav-link" name="place-order">Place Order</a>
+        </li>
+        <li class="sideNavItem" id="subscribe" onclick="toggleContent('subscribe')">
+          <a class="sideNav-link" name="subscribeService">Subscribe to Service</a>
+        </li>
+        <li class="sideNavItem" id="register" onclick="toggleContent('register')">
+          <a class="sideNav-link" name="registerIncident">Register an Incident</a>
+        </li>
+        <li class="sideNavItem" id="chat" onclick="toggleContent('chat')">
+          <a class="sideNav-link" name="chats">Chat</a>
+        </li>
+      </ul>
+    </div>
+    <!--User Dashboard Section for placing order-->
+    <div id="place-order" class="info-content">
+      <div class="font-oswald d-flex flex-direction-row w-100  justify-center sideNavHeader"> Place Order </div>
+      <div class="form">
+        <form class="d-flex flex-direction-column w-100 align-items-center" action="#" method="post"
+          enctype="text/plain">
+          <div class="d-flex flex-direction-column order-container">
+            <div class="d-flex flex-direction-row justify-center media">
+              <input type="text" id="fname" placeholder="First Name" required>
+              <input type="text" id="lane" placeholder="Last Name" required>
+            </div>
+            <div class="d-flex flex-direction-row justify-center media">
+              <input type="text" id="email" name="email" placeholder="Email" required>
+              <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+            </div>
+            <div class="d-flex flex-direction-row justify-center media">
+              <select name="service" id="service" class="font-roboto" required>
+                <option hidden selected>Select Required Service</option>
+                <option value="Washing">Washing</option>
+                <option value="Drying">Drying</option>
+                <option value="Ironing">Ironing</option>
+                <option value="Complete Laundry Service">Complete Laundry Service (Washing+Drying+Ironing)</option>
+              </select>
+              <input type="number" id="noOfItems" name="Items" placeholder="Number of Items" required>
+            </div>
+            <div class="d-flex flex-direction-row justify-center media">
+              <textarea id="Instruction" class="font-roboto" name="Instruction"
+                placeholder="Special Instruction"></textarea>
+            </div>
+            <div class="d-flex w-100  flex-direction-row justify-center ">
+              <button class="btn clear" type="reset">Clear</button>
+              <button class="btn orderButton" type="submit">Place Order</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--User Dashboard Section for subscribing to a service-->
+    <div id="subscribeService" class="info-content d-none">
+      <div class="font-oswald d-flex flex-direction-row w-100  justify-center sideNavHeader"> Subscribe to a Service
+      </div>
+      <div class="form">
+        <form class="d-flex flex-direction-column w-100 align-items-center" action="#" method="post"
+          enctype="text/plain">
+          <div class="d-flex flex-direction-column subscribe-container">
+            <div class="d-flex flex-direction-row justify-center media">
+              <input type="text" id="fname" name="fname" placeholder="First Name" required>
+              <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+            </div>
+            <div class="d-flex flex-direction-row justify-center media">
+              <input type="text" id="email" name="email" placeholder="Email" required>
+              <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+            </div>
+            <div class="d-flex flex-direction-row justify-center media">
+              <select name="subscribe" id="subscribe" class="font-roboto subscribeSelect" required>
+                <option hidden selected>Services</option>
+                <option value="Pick Up">Pick Up</option>
+                <option value="Delivery">Delivery</option>
+                <option value="PickUp&Delivery">Pick Up & Delivery</option>
+              </select>
+              <select name="plan" id="plan" class="font-roboto subscribeSelect">
+                <option hidden selected>Subscription Type</option>
+                <option value="1">Weekly Once</option>
+                <option value="2">Once every two weeks</option>
+                <option value="3">Montly</option>
+              </select>
+              <select name="day" id="day" class="font-roboto subscribeSelect">
+                <option hidden selected>Select Prefered Day</option>
+                <option value="Sunday">Sunday</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+              </select>
+            </div>
+            <div class="d-flex flex-direction-row justify-center media">
+              <input type="text" id="address" name="address" placeholder="Address" required>
+              <input type="text" id="city" name="city" placeholder="City" required>
+              <input type="text" id="State" name="State" placeholder="State" required>
+            </div>
+            <div class="d-flex w-100 flexdirection-row justify-center subscribeButton">
+              <button class="btn clear" type="reset">Clear</button>
+              <button class="btn subscribe" type="submit">Subscribe</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--User Dashboard Section for registering a request/incident-->
+    <div id="registerIncident" class="info-content d-none">
+      <div class="font-oswald d-flex flex-direction-row w-100  justify-center sideNavHeader">Register Incident and
+        Requests</div>
+      <div class="form">
+        <form class="d-flex flex-direction-column w-100 align-items-center" action="#" method="post"
+          enctype="text/plain">
+          <div class="d-flex flex-direction-column register-container">
+            <div class="d-flex flex-direction-row justify-center media">
+              <input type="text" id="fname" name="fname" placeholder="First Name" required>
+              <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+            </div>
+            <div class="d-flex flexdirection-row justify-center media">
+              <input type="text" id="email" name="email" placeholder="Email" required>
+              <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+            </div>
+            <div class="d-flex flexdirection-row justify-center media">
+              <select name="register" id="register" class="font-roboto registerSelect" required>
+                <option hidden selected>Select one...</option>
+                <option value="Incident">Register an Incident</option>
+                <option value="Request">Register a Request</option>
+              </select>
+            </div>
+            <div class="d-flex flexdirection-row justify-center media ">
+              <textarea id="query" class="font-roboto registerTextArea" name="query"
+                placeholder="Enter your query"></textarea>
+            </div>
+            <div class="d-flex w-100 flexdirection-row justify-center   ">
+              <button class="btn clear" type="reset">Clear</button>
+              <button class="btn submit" type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--User Dashboard Section to chat with management-->
+    <div id="chats" class="info-content d-none">
+      <div class="font-oswald d-flex flex-direction-row w-100 justify-center sideNavHeader">Chat</div>
+      <div class="d-flex flex-direction-column chat-container" style="height: 500px;">
+        <div id="display_message" class="display_message"></div>
+        <form class="d-flex flex-direction-column w-100 chat-area">
+          <div class="d-flex flex-direction-row chatBox">
+            <textarea id="message" class="font-roboto" name="message" placeholder="Enter your Message"></textarea>
+            <button class="btn submit" type="submit" onclick="showMessage()">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    // displaying content based on navgation link selected
+    function toggleContent(id) {
+      var element = document.getElementById(id)
+      var sidenavItems = document.getElementsByClassName('sideNavItem');
+      var contentElements = document.getElementsByClassName('info-content');
+
+      for (var i = 0; i < sidenavItems.length; i++) {
+        if (sidenavItems[i].classList.contains('active')) {
+          sidenavItems[i].classList.remove('active');
+          for (var j = 0; j < contentElements.length; j++) {
+            if (!contentElements[j].classList.contains('d-none')) {
+              contentElements[j].classList.add('d-none');
+            }
+          }
+        }
+      }
+      if (!element.classList.contains('active')) {
+        element.classList.add("active");
+        let elementName = element.getElementsByClassName('sideNav-link')[0].getAttribute('name');
+        document.getElementById(elementName).classList.remove('d-none');
+      }
+    }
+    function showMessage() {
+      // Displaying chat messages
+      event.preventDefault()
+      document.getElementById('display_message').innerHTML += `<p>${document.getElementById("message").value}</p></br>`;
+      document.getElementById("message").value = '';
+    }
+  </script>
+</body>
+
+</html>

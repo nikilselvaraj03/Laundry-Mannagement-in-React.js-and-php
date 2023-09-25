@@ -1,0 +1,124 @@
+.subscribe-container {
+    width: 100%;
+  }
+
+.subscribe-form input[type="text"],
+.subscribe-form input[type="number"],
+.subscribe-form input [type="email"] {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 15px;
+  resize: vertical;
+}
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 15px;
+  resize: vertical;
+}
+textarea {
+  width: 100% !important;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 100px;
+  margin: 15px;
+}
+
+.submit,
+.clear {
+  width: 10%;
+  border-radius: 12px;
+  margin-top: 15px;
+  cursor: pointer;
+  margin-right: 20px;
+  background-color: inherit;
+}
+.subscribe {
+  width: 14%;
+  border-radius: 12px;
+  margin-top: 15px;
+  cursor: pointer;
+  margin-right: 20px;
+  background-color: inherit;
+  color: var(--secondary-bg-1);
+}
+
+.clear:hover {
+  border-color: var(--state-danger);
+  color: var(--state-danger);
+}
+
+.submit:hover {
+  border-color: var(--state-success);
+  color: var(--state-success);
+}
+.subscribe:hover {
+  border-color: var(--state-success);
+  color: var(--state-success);
+}
+.orderButton {
+  width: 25%;
+  border-radius: 12px;
+  margin-top: 15px;
+  cursor: pointer;
+  margin-right: 20px;
+  background-color: inherit;
+}
+.orderButton:hover {
+  border-color: var(--state-success);
+  color: var(--state-success);
+}
+#snackbar-service {
+  visibility: hidden; 
+  min-width: 250px; 
+  margin-left: -125px;
+  background-color: rgb(154, 211, 122);
+  color: rgb(37, 37, 37); 
+  text-align: center;
+  border-radius: 5px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+#snackbar-service.danger{
+  background-color: rgb(214, 103, 103);
+  color: white;
+}
+
+
+#snackbar-service.show {
+  visibility: visible; 
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
