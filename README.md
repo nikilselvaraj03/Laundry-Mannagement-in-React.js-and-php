@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+Laundry Management System website created as a part of Academic project for WEB DATA MANAGEMENT using react.js, php and mysql
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
